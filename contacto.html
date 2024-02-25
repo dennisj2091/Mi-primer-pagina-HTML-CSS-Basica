@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="es">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Contacto - Barberia Dennis</title>
+        <link rel="stylesheet" href="reset.css">
+        <link rel="stylesheet" href="style.css">
+        <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+        
+    </head>
+
+    <body>
+        <header>
+            <div class="caja">
+                <h1>
+                    <img src="imagenes/logo.png" alt="Logo de la Barberia Dennis">
+                </h1>
+                <nav>
+                    <ul>
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="productos.html">Productos</a></li>
+                        <li><a href="contacto.html">Contacto</a></li>
+                    </ul>
+                </nav>
+            </div>
+        </header>
+        <main>
+            <form>
+                <label for="nombreapellido">Nombre y Apellido</label>
+                <input type="text" id="nombreapellido" class="input-padron" required>
+
+                <label for="correoelectronico">Correo Electronico</label>
+                <input placeholder="email@dominio.com" type="email" id="correoelectronico" class="input-padron" required>
+
+                <label for="telefono">Telefono</label>
+                <input placeholder="(xxx)xxx-xxxx" type="tel" id="telefono" class="input-padron" required>
+
+                <label for="mensaje">Mensaje</label>
+                <textarea id="mensaje" cols="70" rows="10" class="input-padron"></textarea>
+
+                <fieldset>
+                    <legend>Como le gustaria que lo contactemos? </legend>
+
+                    <label for="radioemail"><input id="radioemail" name="contacto" value="radioemail" type="radio">Email</label>
+    
+                    <label for="whatsapp"><input id="whatsapp" name="contacto" value="whatsapp" type="radio" checked>WhatsApp</label>
+                    
+                    <label for="telefono"><input id="telefono" name="contacto" value="telefono" type="radio">Telefono</label>
+                    
+                </fieldset>
+
+                <fieldset>
+                    <legend>En que horario desea ser contactado?</legend>
+                    <select>
+                        <option>Mañana</option>
+                        <option>Tarde</option>
+                        <option>Noche</option>
+    
+                    </select>
+                </fieldset>
+
+
+                <label class="checkbox"><input type="checkbox" checked>Le gustaria recibir novedades de la Barberia Dennis?</label>
+
+                <input type="submit" value="Enviar formulario" class="enviar">
+            </form>
+
+            <table>
+                <thead>
+                    <tr>
+                        <th>Dia</th>
+                        <th>Horarios</th>
+
+                    </tr>
+                </thead>
+
+                <tbody>
+                    <tr>
+                        <td>Lunes</td>
+                        <td>0800 - 2000</td>
+                    </tr>
+                    <tr>
+                        <td>Miercoles</td>
+                        <td>0800 - 2000</td>
+                    </tr>
+                    <tr>
+                        <td>Viernes</td>
+                        <td>0800 - 2000</td>
+                    </tr>
+                </tbody>
+
+            </table>
+
+        </main>
+        <footer>
+            <img src="imagenes/logo-blanco.png" alt="Logo de la Barberia Dennis">
+            <p class="copyright">&copy; Copy Rights Barberia Dennis - 2024</p>
+        </footer>
+    </body>
+
+</html>
